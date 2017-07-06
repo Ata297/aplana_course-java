@@ -229,6 +229,9 @@ public class Base {
         for(Sweetness sweetness:present) {
             System.out.println(sweetness.toString());
         }
+        if (present.length == 0) {
+            System.out.println("пусто");
+        }
     };
 
     /**
