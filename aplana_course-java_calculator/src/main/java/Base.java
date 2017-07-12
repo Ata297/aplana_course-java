@@ -13,8 +13,8 @@ public class Base {
         System.out.println("В калькуляторе доступны следующие операции:");
         System.out.println("для сложения введите - '+',");
         System.out.println("для вычитания введите - '-',");
-        System.out.println("для сложения введите - '*',");
-        System.out.println("для вычитания введите - '/'.");
+        System.out.println("для сложения введите - '*',"); //точно это сложение?)
+        System.out.println("для вычитания введите - '/'."); //а это вычитание?)
 
         Scanner scanner = new Scanner(System.in);
         boolean is_next_operation = false;
@@ -109,6 +109,6 @@ public class Base {
         System.out.println("Выбрана операция деление.");
         float[] ab = scanner2Float(scanner);
 
-        System.out.printf("Результат: %.4f\n", ab[0] / ab[1]);
+        System.out.printf("Результат: %.4f\n", ab[0] / ab[1]); //а если ab[1] = 0?
     }
 }
