@@ -135,6 +135,11 @@ public class Calculator {
      */
     private static void division(float a, float b) {
         System.out.println("Выбрана операция деление.");
-        System.out.printf("Результат: %.4f\n", a / b);
+
+        if (b == 0.0) {
+            System.out.println("Деление не возможно, так как второй операнд равен 0.");
+        } else {
+            System.out.printf("Результат: %.4f\n", a / b);
+        }
     }
 }
