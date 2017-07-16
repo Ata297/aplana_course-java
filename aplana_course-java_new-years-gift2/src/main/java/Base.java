@@ -1,4 +1,5 @@
-import java.util.Arrays;
+import sweetnesses.*;
+
 import java.util.Scanner;
 
 /**

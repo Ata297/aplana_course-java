@@ -1,30 +1,31 @@
+package sweetnesses;
+
 /**
- * Конфета
+ * Кекс
  *
  * @author Анастасия Вязьмина
  * @version 0.1
  * @since 03.07.2017
  */
-public class Candy extends Sweetness {
+public class Cake extends Sweetness {
     private String filling = "";
 
-    public Candy() {
+    public Cake() {
         super();
     };
 
-    public Candy(String name, float weight, float price, String filling) {
+    public Cake(String name, float weight, float price, String filling) {
         super(name, weight, price);
         this.filling = filling;
     };
 
-    public Candy(String filling) {
-        this("Твикс", 0.01f, 1, filling);
+    public Cake(String filling) {
+        this("Сластена", 0.05f, 5, filling);
 
         if (!filling.equals("")) {
             this.setPrice(1.5f * this.getPrice());
         }
     };
-
     /**
      * Возвращает название начинки
      *
@@ -50,6 +51,6 @@ public class Candy extends Sweetness {
      */
     @Override
     public String toString() {
-        return "Конфета \"" + super.getName() + (this.filling.equals("") ? "\" без начинки": "\" с начинкой \"" + this.filling + "\"") + " (" + super.toString() + ")";
+        return "Кекс \"" + super.getName() + "\"" + (this.filling.equals("") ? "": "\" с начинкой \"" + this.filling + "\"") + " (" + super.toString() + ")";
     }
 }
