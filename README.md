@@ -19,3 +19,7 @@
 **[aplana_course-java_new-years-gift](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_new-years-gift), [v2](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_new-years-gift2)**
 
 2-е задание 4-го учебного дня.
+
+**[aplana_course-java_oop-calculator](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_oop-calculator)**
+
+Задание 6-го учебного дня.
