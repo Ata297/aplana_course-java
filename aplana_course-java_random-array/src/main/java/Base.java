@@ -14,18 +14,18 @@ public class Base {
         System.out.print("Сформированный массив: ");
         System.out.println(Arrays.toString(numbers));
 
-        int[] maxNegativeNumber = searchMaxNegativeNumber(numbers);
+        int indexMaxNegativeNumber = searchMaxNegativeNumber(numbers);
         System.out.printf("Первый максимальный отрицательный элемент %d (номер элемента %d).\n",
-                maxNegativeNumber[0], maxNegativeNumber[1] + 1);
+                numbers[indexMaxNegativeNumber], indexMaxNegativeNumber + 1);
 
-        int[] minPositiveNumber = searchMinPositiveNumber(numbers);
+        int indexMinPositiveNumber = searchMinPositiveNumber(numbers);
         System.out.printf("Первый минимальный положительный элемент %d (номер элемента %d).\n",
-                minPositiveNumber[0], minPositiveNumber[1] + 1);
+                numbers[indexMinPositiveNumber], indexMinPositiveNumber + 1);
 
         System.out.printf("Меняем местами элементы №%d и №%d.\n",
-                maxNegativeNumber[1] + 1, minPositiveNumber[1] + 1);
+                indexMaxNegativeNumber + 1, indexMinPositiveNumber + 1);
 
-        numbers = swapItems(numbers, maxNegativeNumber[1], minPositiveNumber[1]);
+        numbers = swapItems(numbers, indexMaxNegativeNumber, indexMinPositiveNumber);
         System.out.print("Сформированный массив: ");
         System.out.println(Arrays.toString(numbers));
 
@@ -51,38 +51,36 @@ public class Base {
      * Ищет максимальный отрицательный элемент
      *
      * @param numbers массив целых чисел
-     * @return массив [максимальный отрицательный элемент, индекс]
+     * @return индекс максимального отрицательного элемента
      */
-    private static int[] searchMaxNegativeNumber(int[] numbers) {
+    private static int searchMaxNegativeNumber(int[] numbers) {
         int махNegativeNumber = -100;
-        int index = 0;
+        int index = -1;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] < 0 && махNegativeNumber < numbers[i]) {
                 махNegativeNumber = numbers[i];
                 index = i;
             }
         }
-        int[] result = {махNegativeNumber, index};
-        return result;
+        return index;
     };
 
     /**
      * Ищет минимальный положительный элемент
      *
      * @param numbers массив целых чисел
-     * @return массив [минимальный положительный элемент, индекс]
+     * @return индекс минимального положительного элемента
      */
-    private static int[] searchMinPositiveNumber(int[] numbers) {
+    private static int searchMinPositiveNumber(int[] numbers) {
         int minPositiveNumber = 100;
-        int index = 0;
+        int index = -1;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] > 0 && minPositiveNumber > numbers[i]) {
                 minPositiveNumber = numbers[i];
                 index = i;
             }
         }
-        int[] result = {minPositiveNumber, index};
-        return result;
+        return index;
     };
 
     /**
