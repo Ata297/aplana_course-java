@@ -54,10 +54,10 @@ public class MaxWord {
     private static String[] scannerWords(Scanner scanner) {
         String[] words;
         System.out.printf("Введите количество слов: ");
-        int N = scanner.nextInt();
-        words = new String[N];
+        int wordsNumber = scanner.nextInt();
+        words = new String[wordsNumber];
 
-        for(int i = 0; i < N; i++) {
+        for(int i = 0; i < wordsNumber; i++) {
             System.out.printf("Введите слово №%d:\n", i+1);
             words[i] = scanner.next();
         }
