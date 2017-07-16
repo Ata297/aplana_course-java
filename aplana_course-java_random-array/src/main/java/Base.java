@@ -15,19 +15,26 @@ public class Base {
         System.out.println(Arrays.toString(numbers));
 
         int indexMaxNegativeNumber = searchMaxNegativeNumber(numbers);
-        System.out.printf("Первый максимальный отрицательный элемент %d (номер элемента %d).\n",
-                numbers[indexMaxNegativeNumber], indexMaxNegativeNumber + 1);
-
         int indexMinPositiveNumber = searchMinPositiveNumber(numbers);
-        System.out.printf("Первый минимальный положительный элемент %d (номер элемента %d).\n",
-                numbers[indexMinPositiveNumber], indexMinPositiveNumber + 1);
 
-        System.out.printf("Меняем местами элементы №%d и №%d.\n",
-                indexMaxNegativeNumber + 1, indexMinPositiveNumber + 1);
+        if (indexMaxNegativeNumber == -1) {
+            System.out.println("Все числа положительные или 0.");
+        } else if (indexMinPositiveNumber == -1) {
+            System.out.println("Все числа отрицательные или 0.");
+        } else {
+            System.out.printf("Первый максимальный отрицательный элемент %d (номер элемента %d).\n",
+                    numbers[indexMaxNegativeNumber], indexMaxNegativeNumber + 1);
 
-        numbers = swapItems(numbers, indexMaxNegativeNumber, indexMinPositiveNumber);
-        System.out.print("Сформированный массив: ");
-        System.out.println(Arrays.toString(numbers));
+            System.out.printf("Первый минимальный положительный элемент %d (номер элемента %d).\n",
+                    numbers[indexMinPositiveNumber], indexMinPositiveNumber + 1);
+
+            System.out.printf("Меняем местами элементы №%d и №%d.\n",
+                    indexMaxNegativeNumber + 1, indexMinPositiveNumber + 1);
+
+            numbers = swapItems(numbers, indexMaxNegativeNumber, indexMinPositiveNumber);
+            System.out.print("Сформированный массив: ");
+            System.out.println(Arrays.toString(numbers));
+        }
 
     };
 
