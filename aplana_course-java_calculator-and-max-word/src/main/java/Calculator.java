@@ -53,8 +53,8 @@ public class Calculator {
         System.out.println("В калькуляторе доступны следующие операции:");
         System.out.println("для сложения введите - '+',");
         System.out.println("для вычитания введите - '-',");
-        System.out.println("для сложения введите - '*',");
-        System.out.println("для вычитания введите - '/'.");
+        System.out.println("для умножения введите - '*',");
+        System.out.println("для деления введите - '/'.");
     };
 
     /**
