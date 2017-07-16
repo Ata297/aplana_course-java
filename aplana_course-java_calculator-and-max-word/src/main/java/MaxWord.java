@@ -54,7 +54,7 @@ public class MaxWord {
     private static String[] scannerWords(Scanner scanner) {
         String[] words;
         System.out.printf("Введите количество слов: ");
-        int N = scanner.nextInt();
+        int N = scanner.nextInt(); //названия переменных с маленькой буквы и более содержательные
         words = new String[N];
 
         for(int i = 0; i < N; i++) {

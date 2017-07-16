@@ -38,6 +38,7 @@ public class Base {
 
     };
 
+    //а если сгенерировались только положительные или только отрицательные числа, как поведет себя программа?
     /**
      * Возращает массив целых случайных чисел
      *
@@ -49,11 +50,12 @@ public class Base {
     private static int[] userSelectApp(int sizeArray, int minNumber, int maxNumber) {
         int[] numbers = new int[sizeArray];
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = (int)(Math.random() * (maxNumber - minNumber) + minNumber);
+            numbers[i] = (int)(Math.random() * (maxNumber - minNumber) + minNumber); //проверь, будут ли генериться крайние значения -10, 10
         }
         return numbers;
     };
 
+    //можешь возвращать только индекс элемента, а потом по индексу уже находишь его значение
     /**
      * Ищет максимальный отрицательный элемент
      *
