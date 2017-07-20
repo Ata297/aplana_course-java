@@ -23,3 +23,7 @@
 **[aplana_course-java_oop-calculator](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_oop-calculator)**
 
 Задание 6-го учебного дня.
+
+**[aplana_course-java_parsing-words-list](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_parsing-words-list)**
+
+Задание 7-го учебного дня.
