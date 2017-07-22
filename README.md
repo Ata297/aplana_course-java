@@ -27,3 +27,7 @@
 **[aplana_course-java_parsing-words-list](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_parsing-words-list)**
 
 Задание 7-го учебного дня.
+
+**[aplana_course-java_calculator-with-exceptions](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_calculator-with-exceptions)**
+
+Задание 8-го учебного дня.
