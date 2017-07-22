@@ -31,3 +31,7 @@
 **[aplana_course-java_calculator-with-exceptions](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_calculator-with-exceptions)**
 
 Задание 8-го учебного дня.
+
+**[aplana_course-java_calculator-with-tests](https://github.com/Ata297/aplana_course-java/tree/master/aplana_course-java_calculator-with-tests)**
+
+Задание 9-го учебного дня.
